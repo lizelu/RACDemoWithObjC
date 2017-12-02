@@ -10,6 +10,10 @@
 
 @interface RACCommandViewModel : NSObject
 
-@property (nonatomic, strong) RACCommand *loginCommand;  //对外的命令接口，来触发登录操作
+@property (nonatomic, strong) RACCommand *loginCommand;     //对外的命令接口，来触发登录操作
+@property (nonatomic, strong) RACSignal loginButtonEnableSignal;    //登录按钮是否可用信号
+@property (nonatomic, copy) NSString *userName;
+@property (nonatomic, copy) NSString *password;
+@property (nonatomic, copy) NSString * authCode;
 
 @end

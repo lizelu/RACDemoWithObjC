@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *authCodeTextField;
+
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;     //登录按钮
 @property (weak, nonatomic) IBOutlet UITextView *logTextView;   //显示log日志
 @property (nonatomic) RACCommandViewModel *viewModel;           //ViewModle层
@@ -32,6 +33,12 @@
         @strongify(self)
         [self fetchData];
     }];
+    
+    [self bindValueAndSignal];
+}
+
+- (void)bindValueAndSignal {
+    RAC(self.viewModel, userName) = [self.userNameTextField.rac_textSignal];
 }
 
 
