@@ -22,15 +22,26 @@
     if (self) {
         @weakify(self)
         self.loginRequest = [LoginRequest new];
+        
         //创建登录命令
         self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             @strongify(self)
             return [self login];
         }];
+        
+        NSArray *signals = @[RACObserve(self, userName),
+                             RACObserve(self, password),
+                             RACObserve(self, authCode)];
+        self.loginButtonEnableSignal =
+        [RACSignal combineLatest:signals reduce:^(NSString *userName,
+                                                  NSString *password,
+                                                  NSString *authCode) {
+            return @(userName.length > 0 && password.length > 0 && authCode.length > 0);
+        }];
+        
     }
     return self;
 }
-
 
 /**
  登录操作
@@ -43,9 +54,11 @@
         @strongify(self)
         
         [subscriber sendNext:@"login……"];
+        [subscriber sendNext:[NSString stringWithFormat:@"USER: %@, PWD: %@, AUTH: %@", self.userName, self.password, self.authCode]];
         
         [self.loginRequest request:^(NSString *value) {     //发起网络请求
             [subscriber sendNext:value];
+            [subscriber sendNext:@"\\n"];
             [subscriber sendCompleted];
         }];
     }];

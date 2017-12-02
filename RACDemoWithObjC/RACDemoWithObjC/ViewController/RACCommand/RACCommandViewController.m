@@ -38,7 +38,35 @@
 }
 
 - (void)bindValueAndSignal {
-    RAC(self.viewModel, userName) = [self.userNameTextField.rac_textSignal];
+    
+//    @weakify(self)
+//    [self.userNameTextField.rac_textSignal subscribeNext:^(NSString *userName) {
+//        @strongify(self)
+//        self.viewModel.userName = userName;
+//    }];
+//
+//    [self.passwordTextField.rac_textSignal subscribeNext:^(NSString *password) {
+//        @strongify(self)
+//        self.viewModel.password = password;
+//    }];
+//
+//    [self.authCodeTextField.rac_textSignal subscribeNext:^(NSString *authCode) {
+//        @strongify(self)
+//        self.viewModel.authCode = authCode;
+//    }];
+//
+//    [self.viewModel.loginButtonEnableSignal subscribeNext:^(NSNumber *value) {
+//        @strongify(self)
+//        self.loginButton.enabled = value.boolValue;
+//    }];
+    
+    
+    // or
+
+    RAC(self.viewModel, userName) = self.userNameTextField.rac_textSignal;
+    RAC(self.viewModel, password) = self.passwordTextField.rac_textSignal;
+    RAC(self.viewModel, authCode) = self.authCodeTextField.rac_textSignal;
+    RAC(self.loginButton, enabled) = self.viewModel.loginButtonEnableSignal;
 }
 
 
