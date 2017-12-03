@@ -22,7 +22,9 @@
 
 - (void)createDataSource {
     
-    self.dataSource = @[@{@"title":@"ColdSignal", @"vc":@"ColdSignalViewController"},
+    self.dataSource = @[@{@"title":@"BaseOperator", @"vc":@"RACBaseOperatorViewController"},
+                        
+                        @{@"title":@"ColdSignal", @"vc":@"ColdSignalViewController"},
                         
                         @{@"title":@"SignalSwitch", @"vc":@"SignalSwitchToLatestViewController"},
                         

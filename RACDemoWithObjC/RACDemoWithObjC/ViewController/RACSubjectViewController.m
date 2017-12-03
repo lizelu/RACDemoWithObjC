@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *sendNextButton;
 @property (weak, nonatomic) IBOutlet UIButton *subscriberButton;
 @property (weak, nonatomic) IBOutlet UITextView *logTextView;
+@property (weak, nonatomic) IBOutlet UIButton *hotSignalSubscriberButton;
 @property (strong, nonatomic) RACSubject *subject;
 
 @end
@@ -33,12 +34,29 @@
     
     [[self.subscriberButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         @strongify(self)
-        [self showLog:@"\\n新添加一个监听者"];
+        [self showLog:@"\\nsubject : 新添加一个监听者"];
         
         @weakify(self)
         [self.subject subscribeNext:^(NSString *value) {
             @strongify(self)
-            [self showLog:value];
+            [self showLog:[NSString stringWithFormat:@"subject:%@", value]];
+        }];
+    }];
+    
+    
+    //================hot signal===================
+    RACMulticastConnection *connect = [self.subject publish];
+    [connect connect];
+    RACSignal *hotSignal = connect.signal;
+    
+    [[self.hotSignalSubscriberButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        @strongify(self)
+        [self showLog:@"\\nhot signal : 新添加一个监听者"];
+        
+        @weakify(self)
+        [hotSignal subscribeNext:^(NSString *value) {
+            @strongify(self)
+            [self showLog:[NSString stringWithFormat:@"hot signal:%@", value]];
         }];
     }];
 }

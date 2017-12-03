@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		047C60A6C2063A23103D1A83 /* Pods_RACDemoWithObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9145091ED38AB708EE66367 /* Pods_RACDemoWithObjC.framework */; };
+		F4034F831FD406B500506284 /* RACBaseOperatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4034F821FD406B500506284 /* RACBaseOperatorViewController.m */; };
 		F4291D351FCF9B5F00B0975A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4291D341FCF9B5F00B0975A /* AppDelegate.m */; };
 		F4291D3B1FCF9B5F00B0975A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4291D391FCF9B5F00B0975A /* Main.storyboard */; };
 		F4291D3D1FCF9B5F00B0975A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4291D3C1FCF9B5F00B0975A /* Assets.xcassets */; };
@@ -33,6 +34,8 @@
 		2255D4EA0C055EBBF1D34E25 /* Pods-RACDemoWithObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDemoWithObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACDemoWithObjC/Pods-RACDemoWithObjC.release.xcconfig"; sourceTree = "<group>"; };
 		3A354FABF8572A9121A6B932 /* Pods-RACDemoWithObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDemoWithObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACDemoWithObjC/Pods-RACDemoWithObjC.debug.xcconfig"; sourceTree = "<group>"; };
 		E9145091ED38AB708EE66367 /* Pods_RACDemoWithObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACDemoWithObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4034F811FD406B500506284 /* RACBaseOperatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACBaseOperatorViewController.h; sourceTree = "<group>"; };
+		F4034F821FD406B500506284 /* RACBaseOperatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACBaseOperatorViewController.m; sourceTree = "<group>"; };
 		F4291D301FCF9B5F00B0975A /* RACDemoWithObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACDemoWithObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4291D331FCF9B5F00B0975A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F4291D341FCF9B5F00B0975A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 				F4291D6D1FD1270500B0975A /* MainTableViewController.m */,
 				F4291D521FCFD7C200B0975A /* ViewController.h */,
 				F4291D531FCFD7C200B0975A /* ViewController.m */,
+				F4034F811FD406B500506284 /* RACBaseOperatorViewController.h */,
+				F4034F821FD406B500506284 /* RACBaseOperatorViewController.m */,
 				F4291D501FCFD7C200B0975A /* SignalSwitchToLatestViewController.h */,
 				F4291D511FCFD7C200B0975A /* SignalSwitchToLatestViewController.m */,
 				F4291D5A1FCFDA6700B0975A /* SignalCombiningLatestViewController.h */,
@@ -342,6 +347,7 @@
 				F4291D7A1FD14BF900B0975A /* RACCommandViewController.m in Sources */,
 				F4291D591FCFD8C700B0975A /* ShowLogUtile.m in Sources */,
 				F452B7E21FD296B000136861 /* ColdSignalViewController.m in Sources */,
+				F4034F831FD406B500506284 /* RACBaseOperatorViewController.m in Sources */,
 				F4291D431FCF9B5F00B0975A /* main.m in Sources */,
 				F4291D621FCFEBDF00B0975A /* RACReplaySubjectViewController.m in Sources */,
 				F4291D5C1FCFDA6700B0975A /* SignalCombiningLatestViewController.m in Sources */,
