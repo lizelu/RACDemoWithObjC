@@ -25,6 +25,7 @@
 		F4291D7A1FD14BF900B0975A /* RACCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4291D771FD14BF900B0975A /* RACCommandViewController.m */; };
 		F4291D801FD15EA200B0975A /* RACCommandViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4291D7F1FD15EA200B0975A /* RACCommandViewModel.m */; };
 		F4291D831FD15ED800B0975A /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4291D821FD15ED800B0975A /* LoginRequest.m */; };
+		F452B7E21FD296B000136861 /* ColdSignalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F452B7E11FD296B000136861 /* ColdSignalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,8 @@
 		F4291D7F1FD15EA200B0975A /* RACCommandViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACCommandViewModel.m; sourceTree = "<group>"; };
 		F4291D811FD15ED800B0975A /* LoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
 		F4291D821FD15ED800B0975A /* LoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
+		F452B7E01FD296B000136861 /* ColdSignalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColdSignalViewController.h; sourceTree = "<group>"; };
+		F452B7E11FD296B000136861 /* ColdSignalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColdSignalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				F4291D641FD029F200B0975A /* RACObserveViewController.m */,
 				F4291D661FD0EEDA00B0975A /* RACKeypathController.h */,
 				F4291D671FD0EEDA00B0975A /* RACKeypathController.m */,
+				F452B7E01FD296B000136861 /* ColdSignalViewController.h */,
+				F452B7E11FD296B000136861 /* ColdSignalViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 				F4291D6E1FD1270500B0975A /* MainTableViewController.m in Sources */,
 				F4291D7A1FD14BF900B0975A /* RACCommandViewController.m in Sources */,
 				F4291D591FCFD8C700B0975A /* ShowLogUtile.m in Sources */,
+				F452B7E21FD296B000136861 /* ColdSignalViewController.m in Sources */,
 				F4291D431FCF9B5F00B0975A /* main.m in Sources */,
 				F4291D621FCFEBDF00B0975A /* RACReplaySubjectViewController.m in Sources */,
 				F4291D5C1FCFDA6700B0975A /* SignalCombiningLatestViewController.m in Sources */,

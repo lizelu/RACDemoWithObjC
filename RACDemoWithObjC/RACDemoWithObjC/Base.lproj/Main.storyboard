@@ -517,5 +517,49 @@
             </objects>
             <point key="canvasLocation" x="-340" y="407.0464767616192"/>
         </scene>
+        <!--Cold Signal View Controller-->
+        <scene sceneID="eFz-gn-A1G">
+            <objects>
+                <viewController storyboardIdentifier="ColdSignalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2n0-Zj-l1p" customClass="ColdSignalViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GfL-Yl-E5E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-qZ-GcL">
+                                <rect key="frame" x="16" y="198" width="343" height="449"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" red="0.98028594260000002" green="0.9804533124" blue="0.98027533290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Id9-fx-8rG">
+                                <rect key="frame" x="16" y="96" width="102" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="g9M-4y-JFT"/>
+                                    <constraint firstAttribute="height" constant="30" id="rBv-yl-9Br"/>
+                                </constraints>
+                                <state key="normal" title="AddSubscriber"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VWT-qZ-GcL" firstAttribute="top" secondItem="Id9-fx-8rG" secondAttribute="bottom" constant="72" id="2Xl-un-y4X"/>
+                            <constraint firstItem="VWT-qZ-GcL" firstAttribute="leading" secondItem="Gui-sq-bzb" secondAttribute="leading" constant="16" id="CR4-Iv-0Wm"/>
+                            <constraint firstItem="Gui-sq-bzb" firstAttribute="trailing" secondItem="VWT-qZ-GcL" secondAttribute="trailing" constant="16" id="NWJ-Rx-Wz3"/>
+                            <constraint firstItem="Id9-fx-8rG" firstAttribute="leading" secondItem="Gui-sq-bzb" secondAttribute="leading" constant="16" id="ZwW-VA-vrT"/>
+                            <constraint firstItem="Gui-sq-bzb" firstAttribute="bottom" secondItem="VWT-qZ-GcL" secondAttribute="bottom" constant="20" id="j66-k7-18R"/>
+                            <constraint firstItem="Id9-fx-8rG" firstAttribute="top" secondItem="Gui-sq-bzb" secondAttribute="top" constant="76" id="vLL-rb-WBr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gui-sq-bzb"/>
+                    </view>
+                    <connections>
+                        <outlet property="addSubscriberButton" destination="Id9-fx-8rG" id="37c-WS-EvQ"/>
+                        <outlet property="logTextView" destination="VWT-qZ-GcL" id="RY9-R4-hHh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVV-OL-GuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="407"/>
+        </scene>
     </scenes>
 </document>
