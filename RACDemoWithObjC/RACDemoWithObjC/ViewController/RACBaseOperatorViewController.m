@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"login";
     // Do any additional setup after loading the view.
     self.subscriptions = 0;
 
@@ -54,6 +55,7 @@
         @strongify(self)
         [self showLog:[NSString stringWithFormat:@"subscription %u", self.subscriptions]];
     }];
+    [self showLog:@"\\n"];
 }
 
 - (IBAction)tapMappingButton:(id)sender {
@@ -67,6 +69,7 @@
     [[mapped signal] subscribeNext:^(NSString *value) {
         [self showLog:value];
     }];
+    [self showLog:@"\\n"];
 }
 
 - (IBAction)tapConcatenatingButton:(id)sender {
@@ -78,6 +81,7 @@
     [[concatenated signal] subscribeNext:^(NSString *value) {
         [self showLog:value];
     }];
+    [self showLog:@"\\n"];
 }
 
 - (IBAction)taptaptapFlatteningButton:(id)sender {
@@ -90,6 +94,7 @@
     [[flattened signal] subscribeNext:^(NSString *value) {
         [self showLog:value];
     }];
+    [self showLog:@"\\n"];
 }
 
 - (IBAction)tapSignalAreMergedButton:(id)sender {
@@ -114,6 +119,7 @@
     [letters sendNext:@"B"];
     [letters sendNext:@"C"];
     [numbers sendNext:@"2"];
+    [self showLog:@"\\n"];
 }
 
 

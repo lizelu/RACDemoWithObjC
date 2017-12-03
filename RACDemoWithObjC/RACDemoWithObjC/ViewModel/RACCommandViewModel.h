@@ -14,6 +14,7 @@
 @property (nonatomic, strong) RACSignal *loginButtonEnableSignal;    //登录按钮是否可用信号
 @property (nonatomic, copy) NSString *userName;                     
 @property (nonatomic, copy) NSString *password;
-@property (nonatomic, copy) NSString * authCode;
+@property (nonatomic, copy) NSString *authCode;
+@property (nonatomic, copy) NSString *log;
 
 @end

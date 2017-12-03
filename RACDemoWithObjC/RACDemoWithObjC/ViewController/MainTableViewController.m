@@ -40,7 +40,7 @@
                         
                         @{@"title":@"RAC(_,…)", @"vc":@"RACKeypathController"},
                         
-                        @{@"title":@"RACCommand", @"vc":@"RACCommandViewController"}];
+                        @{@"title":@"Lgin", @"vc":@"RACCommandViewController"}];
 }
 
 - (void)didReceiveMemoryWarning {

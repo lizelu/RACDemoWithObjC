@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;     //登录按钮
 @property (weak, nonatomic) IBOutlet UITextView *logTextView;   //显示log日志
 @property (nonatomic) RACCommandViewModel *viewModel;           //ViewModle层
+@property (weak, nonatomic) IBOutlet UILabel *logLabel;
 
 @end
 
@@ -38,35 +39,13 @@
 }
 
 - (void)bindValueAndSignal {
-    
-//    @weakify(self)
-//    [self.userNameTextField.rac_textSignal subscribeNext:^(NSString *userName) {
-//        @strongify(self)
-//        self.viewModel.userName = userName;
-//    }];
-//
-//    [self.passwordTextField.rac_textSignal subscribeNext:^(NSString *password) {
-//        @strongify(self)
-//        self.viewModel.password = password;
-//    }];
-//
-//    [self.authCodeTextField.rac_textSignal subscribeNext:^(NSString *authCode) {
-//        @strongify(self)
-//        self.viewModel.authCode = authCode;
-//    }];
-//
-//    [self.viewModel.loginButtonEnableSignal subscribeNext:^(NSNumber *value) {
-//        @strongify(self)
-//        self.loginButton.enabled = value.boolValue;
-//    }];
-    
-    
-    // or
 
     RAC(self.viewModel, userName) = self.userNameTextField.rac_textSignal;
     RAC(self.viewModel, password) = self.passwordTextField.rac_textSignal;
     RAC(self.viewModel, authCode) = self.authCodeTextField.rac_textSignal;
     RAC(self.loginButton, enabled) = self.viewModel.loginButtonEnableSignal;
+    
+    RACChannelTo(self.viewModel, log) = RACChannelTo(self.logLabel, text);
 }
 
 

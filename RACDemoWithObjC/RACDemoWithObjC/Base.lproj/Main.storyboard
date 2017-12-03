@@ -188,10 +188,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MaY-xh-Es8">
-                                <rect key="frame" x="16" y="445" width="343" height="214"/>
+                                <rect key="frame" x="16" y="204" width="343" height="455"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="214" id="ra4-4l-E1G"/>
+                                    <constraint firstAttribute="height" constant="455" id="ra4-4l-E1G"/>
                                 </constraints>
                                 <color key="textColor" red="0.98028594260000002" green="0.9804533124" blue="0.98027533290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -594,6 +594,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="未登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkT-l6-dy4">
+                                <rect key="frame" x="16" y="173" width="304" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -617,6 +624,7 @@
                     </view>
                     <connections>
                         <outlet property="authCodeTextField" destination="b9F-do-uBv" id="s9w-WX-kr2"/>
+                        <outlet property="logLabel" destination="pkT-l6-dy4" id="H29-Du-gxA"/>
                         <outlet property="logTextView" destination="zh6-XA-xj6" id="02u-aj-MXQ"/>
                         <outlet property="loginButton" destination="8vs-h1-g9T" id="Kv7-hF-8Fc"/>
                         <outlet property="passwordTextField" destination="tg1-FO-n4c" id="kzE-vD-ePL"/>

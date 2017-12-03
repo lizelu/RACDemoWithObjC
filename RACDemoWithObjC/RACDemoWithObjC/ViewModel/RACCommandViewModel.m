@@ -54,9 +54,11 @@
         @strongify(self)
         
         [subscriber sendNext:@"login……"];
+        self.log = @"正在登陆";
         [subscriber sendNext:[NSString stringWithFormat:@"USER: %@, PWD: %@, AUTH: %@", self.userName, self.password, self.authCode]];
         
         [self.loginRequest request:^(NSString *value) {     //发起网络请求
+            self.log = @"登陆成功";
             [subscriber sendNext:value];
             [subscriber sendNext:@"\\n"];
             [subscriber sendCompleted];
