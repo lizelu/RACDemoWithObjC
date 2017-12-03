@@ -56,7 +56,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JPD-FC-SnI">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JPD-FC-SnI">
                                 <rect key="frame" x="16" y="192" width="343" height="459"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" red="0.98028594260000002" green="0.9804533124" blue="0.98027533290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -150,7 +150,7 @@
                                     <action selector="tapSendNumberButton:" destination="uTf-4H-4Mm" eventType="touchUpInside" id="Xkg-n5-bPN"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x1J-wR-e27">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x1J-wR-e27">
                                 <rect key="frame" x="16" y="114" width="343" height="523"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" red="0.98028594260000002" green="0.9804533124" blue="0.98027533290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -216,7 +216,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="roL-d0-IA5">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="roL-d0-IA5">
                                 <rect key="frame" x="16" y="311" width="343" height="336"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -282,7 +282,7 @@
                                     <action selector="tapSendNumberButton:" destination="pmE-hF-Whj" eventType="touchUpInside" id="fjt-3P-SaD"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gY9-Qy-xQh">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gY9-Qy-xQh">
                                 <rect key="frame" x="16" y="114" width="343" height="523"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" red="0.98028594260000002" green="0.9804533124" blue="0.98027533290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -341,7 +341,7 @@
                                     <action selector="tapSendNextButton:" destination="VME-jW-N6i" eventType="touchUpInside" id="w0B-aX-H9Q"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w9a-a9-934">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w9a-a9-934">
                                 <rect key="frame" x="16" y="114" width="343" height="523"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" red="0.98028594260000002" green="0.9804533124" blue="0.98027533290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -378,7 +378,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rmJ-tb-nbM">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rmJ-tb-nbM">
                                 <rect key="frame" x="16" y="131" width="343" height="506"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" red="0.98028594260000002" green="0.9804533124" blue="0.98027533290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -451,7 +451,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zh6-XA-xj6">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zh6-XA-xj6">
                                 <rect key="frame" x="16" y="202" width="343" height="449"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" red="0.98028594260000002" green="0.9804533124" blue="0.98027533290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -525,7 +525,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-qZ-GcL">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-qZ-GcL">
                                 <rect key="frame" x="16" y="198" width="343" height="449"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" red="0.98028594260000002" green="0.9804533124" blue="0.98027533290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -533,33 +533,99 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Id9-fx-8rG">
-                                <rect key="frame" x="16" y="96" width="102" height="30"/>
+                                <rect key="frame" x="16" y="96" width="189" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="102" id="g9M-4y-JFT"/>
+                                    <constraint firstAttribute="width" constant="189" id="g9M-4y-JFT"/>
                                     <constraint firstAttribute="height" constant="30" id="rBv-yl-9Br"/>
                                 </constraints>
-                                <state key="normal" title="AddSubscriber"/>
+                                <state key="normal" title="ColdSignalAddSubscriber"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C77-dM-FzA">
+                                <rect key="frame" x="20" y="139" width="189" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="CNq-LX-28x"/>
+                                    <constraint firstAttribute="height" constant="30" id="eMD-Gr-XtC"/>
+                                </constraints>
+                                <state key="normal" title="HotSignalAddSubscriber"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VWT-qZ-GcL" firstAttribute="top" secondItem="Id9-fx-8rG" secondAttribute="bottom" constant="72" id="2Xl-un-y4X"/>
                             <constraint firstItem="VWT-qZ-GcL" firstAttribute="leading" secondItem="Gui-sq-bzb" secondAttribute="leading" constant="16" id="CR4-Iv-0Wm"/>
+                            <constraint firstItem="C77-dM-FzA" firstAttribute="top" secondItem="Id9-fx-8rG" secondAttribute="bottom" constant="13" id="FNw-Wc-FhA"/>
                             <constraint firstItem="Gui-sq-bzb" firstAttribute="trailing" secondItem="VWT-qZ-GcL" secondAttribute="trailing" constant="16" id="NWJ-Rx-Wz3"/>
                             <constraint firstItem="Id9-fx-8rG" firstAttribute="leading" secondItem="Gui-sq-bzb" secondAttribute="leading" constant="16" id="ZwW-VA-vrT"/>
                             <constraint firstItem="Gui-sq-bzb" firstAttribute="bottom" secondItem="VWT-qZ-GcL" secondAttribute="bottom" constant="20" id="j66-k7-18R"/>
                             <constraint firstItem="Id9-fx-8rG" firstAttribute="top" secondItem="Gui-sq-bzb" secondAttribute="top" constant="76" id="vLL-rb-WBr"/>
+                            <constraint firstItem="C77-dM-FzA" firstAttribute="leading" secondItem="Gui-sq-bzb" secondAttribute="leading" constant="20" id="xXo-qV-SRz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gui-sq-bzb"/>
                     </view>
                     <connections>
                         <outlet property="addSubscriberButton" destination="Id9-fx-8rG" id="37c-WS-EvQ"/>
+                        <outlet property="hotSignalAddSubscriberButton" destination="C77-dM-FzA" id="vAe-xK-wk1"/>
                         <outlet property="logTextView" destination="VWT-qZ-GcL" id="RY9-R4-hHh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVV-OL-GuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="302" y="407"/>
+            <point key="canvasLocation" x="301.60000000000002" y="406.14692653673166"/>
+        </scene>
+        <!--Subject View Controller-->
+        <scene sceneID="3Fp-uw-lEW">
+            <objects>
+                <viewController storyboardIdentifier="RACSubjectViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sRR-t6-mjc" customClass="RACSubjectViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3q3-MM-B7S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BxB-Gs-fTR">
+                                <rect key="frame" x="16" y="198" width="343" height="449"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" red="0.98028594260000002" green="0.9804533124" blue="0.98027533290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxf-OZ-CEx">
+                                <rect key="frame" x="17" y="123" width="66" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="3Ov-Hr-rc3"/>
+                                    <constraint firstAttribute="height" constant="30" id="dWz-Ns-rSj"/>
+                                </constraints>
+                                <state key="normal" title="sendNext"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4a-kE-23Z">
+                                <rect key="frame" x="118" y="123" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0zu-Py-yRo"/>
+                                    <constraint firstAttribute="width" constant="75" id="CAl-BP-urU"/>
+                                </constraints>
+                                <state key="normal" title="Subscriber"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2um-8d-PKx" firstAttribute="trailing" secondItem="BxB-Gs-fTR" secondAttribute="trailing" constant="16" id="4yP-Wc-78J"/>
+                            <constraint firstItem="2um-8d-PKx" firstAttribute="bottom" secondItem="BxB-Gs-fTR" secondAttribute="bottom" constant="20" id="7HK-Uh-u6p"/>
+                            <constraint firstItem="Xxf-OZ-CEx" firstAttribute="leading" secondItem="2um-8d-PKx" secondAttribute="leading" constant="17" id="Nmf-i9-PIg"/>
+                            <constraint firstItem="Xxf-OZ-CEx" firstAttribute="top" secondItem="2um-8d-PKx" secondAttribute="top" constant="103" id="dwC-i9-6iw"/>
+                            <constraint firstItem="P4a-kE-23Z" firstAttribute="leading" secondItem="Xxf-OZ-CEx" secondAttribute="trailing" constant="35" id="gBI-c7-4NQ"/>
+                            <constraint firstItem="P4a-kE-23Z" firstAttribute="top" secondItem="2um-8d-PKx" secondAttribute="top" constant="103" id="gnF-Cd-bEC"/>
+                            <constraint firstItem="BxB-Gs-fTR" firstAttribute="top" secondItem="Xxf-OZ-CEx" secondAttribute="bottom" constant="45" id="q7A-jG-6rB"/>
+                            <constraint firstItem="BxB-Gs-fTR" firstAttribute="leading" secondItem="2um-8d-PKx" secondAttribute="leading" constant="16" id="xDL-yL-zYX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2um-8d-PKx"/>
+                    </view>
+                    <connections>
+                        <outlet property="logTextView" destination="BxB-Gs-fTR" id="Y5p-gf-a9S"/>
+                        <outlet property="sendNextButton" destination="Xxf-OZ-CEx" id="7fT-kj-0qL"/>
+                        <outlet property="subscriberButton" destination="P4a-kE-23Z" id="Ynu-LZ-6Ng"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UiH-Ok-2qb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="405"/>
         </scene>
     </scenes>
 </document>

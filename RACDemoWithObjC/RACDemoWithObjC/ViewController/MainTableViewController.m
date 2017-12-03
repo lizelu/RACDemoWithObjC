@@ -30,6 +30,8 @@
                         
                         @{@"title":@"SignalMerge", @"vc":@"SignalMergeViewController"},
                         
+                        @{@"title":@"RACSubject", @"vc":@"RACSubjectViewController"},
+                        
                         @{@"title":@"RACReplaySubject", @"vc":@"RACReplaySubjectViewController"},
                         
                         @{@"title":@"RACObserve", @"vc":@"RACObserveViewController"},

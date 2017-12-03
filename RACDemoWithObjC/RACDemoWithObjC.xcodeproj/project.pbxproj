@@ -26,6 +26,7 @@
 		F4291D801FD15EA200B0975A /* RACCommandViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4291D7F1FD15EA200B0975A /* RACCommandViewModel.m */; };
 		F4291D831FD15ED800B0975A /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4291D821FD15ED800B0975A /* LoginRequest.m */; };
 		F452B7E21FD296B000136861 /* ColdSignalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F452B7E11FD296B000136861 /* ColdSignalViewController.m */; };
+		F452B7E51FD3F1FC00136861 /* RACSubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F452B7E41FD3F1FC00136861 /* RACSubjectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,8 @@
 		F4291D821FD15ED800B0975A /* LoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
 		F452B7E01FD296B000136861 /* ColdSignalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColdSignalViewController.h; sourceTree = "<group>"; };
 		F452B7E11FD296B000136861 /* ColdSignalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColdSignalViewController.m; sourceTree = "<group>"; };
+		F452B7E31FD3F1FC00136861 /* RACSubjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACSubjectViewController.h; sourceTree = "<group>"; };
+		F452B7E41FD3F1FC00136861 /* RACSubjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSubjectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 				F4291D5B1FCFDA6700B0975A /* SignalCombiningLatestViewController.m */,
 				F4291D5D1FCFE43800B0975A /* SignalMergeViewController.h */,
 				F4291D5E1FCFE43800B0975A /* SignalMergeViewController.m */,
+				F452B7E31FD3F1FC00136861 /* RACSubjectViewController.h */,
+				F452B7E41FD3F1FC00136861 /* RACSubjectViewController.m */,
 				F4291D601FCFEBDF00B0975A /* RACReplaySubjectViewController.h */,
 				F4291D611FCFEBDF00B0975A /* RACReplaySubjectViewController.m */,
 				F4291D631FD029F200B0975A /* RACObserveViewController.h */,
@@ -343,6 +348,7 @@
 				F4291D651FD029F200B0975A /* RACObserveViewController.m in Sources */,
 				F4291D831FD15ED800B0975A /* LoginRequest.m in Sources */,
 				F4291D5F1FCFE43800B0975A /* SignalMergeViewController.m in Sources */,
+				F452B7E51FD3F1FC00136861 /* RACSubjectViewController.m in Sources */,
 				F4291D801FD15EA200B0975A /* RACCommandViewModel.m in Sources */,
 				F4291D541FCFD7C200B0975A /* SignalSwitchToLatestViewController.m in Sources */,
 				F4291D681FD0EEDA00B0975A /* RACKeypathController.m in Sources */,

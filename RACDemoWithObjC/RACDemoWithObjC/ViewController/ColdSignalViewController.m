@@ -13,6 +13,7 @@
 @interface ColdSignalViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *addSubscriberButton;
+@property (weak, nonatomic) IBOutlet UIButton *hotSignalAddSubscriberButton;
 @property (weak, nonatomic) IBOutlet UITextView *logTextView;
 
 @end
@@ -24,30 +25,38 @@
     
     __block unsigned subscriptions = 0;
     
+    //cold signal
     //每次对下方信号进行订阅，都会执行尾随闭包
     //For a cold signal, side effects will be performed once per subscription
     //This behavior can be changed using a connection.
-    
     RACSignal *loggingSignal = [RACSignal createSignal:^ RACDisposable * (id<RACSubscriber> subscriber) {
-        subscriptions++;
-        [subscriber sendNext:@(subscriptions)];
-        [subscriber sendCompleted];
+        [[RACScheduler mainThreadScheduler] afterDelay:3 schedule:^{
+            subscriptions++;
+            [subscriber sendNext:@(subscriptions)];
+        }];
         return nil;
     }];
-
+    
+    
+    //转换成hot signal
+    RACMulticastConnection *connectioin = [loggingSignal publish];
+    [connectioin connect];
+    RACSignal *hotSignal = connectioin.signal;
+    
     @weakify(self)
     [[self.addSubscriberButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         @strongify(self)
-        [loggingSignal subscribeCompleted:^{
-            [self showLog:[NSString stringWithFormat:@"subscribeCompleted: 添加订阅者 %u", subscriptions]];
-        }];
-        
         [loggingSignal subscribeNext:^(id x) {
-            [self showLog:[NSString stringWithFormat:@"subscribeNext: 添加订阅者 %@", x]];
+            [self showLog:[NSString stringWithFormat:@"cold siganl subscribeNext: 添加订阅者 %@", x]];
         }];
     }];
     
-    
+    [[self.hotSignalAddSubscriberButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        @strongify(self)
+        [hotSignal subscribeNext:^(id x) {
+            [self showLog:[NSString stringWithFormat:@"hot siganl subscribeNext: 添加订阅者 %@", x]];
+        }];
+    }];
 }
 
 - (void)showLog:(NSString *)log {
