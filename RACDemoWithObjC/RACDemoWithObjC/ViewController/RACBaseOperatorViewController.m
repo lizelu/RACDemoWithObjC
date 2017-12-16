@@ -37,7 +37,6 @@
         @strongify(self)
         [self showLog:[NSString stringWithFormat:@"about to complete subscription %u", self.subscriptions]];
     }];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,6 +55,22 @@
         [self showLog:[NSString stringWithFormat:@"subscription %u", self.subscriptions]];
     }];
     [self showLog:@"\\n"];
+    
+//    UIAlertController *alter = [UIAlertController alertControllerWithTitle:@"Alter" message:@"Message" preferredStyle:UIAlertControllerStyleAlert];
+//
+//    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        NSLog(@"OK");
+//    }];
+//    [alter addAction:ok];
+//
+//    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+//        NSLog(@"取消");
+//    }];
+//    [alter addAction:cancel];
+//
+//    [self presentViewController:alter animated:YES completion:^{
+//
+//    }];
 }
 
 - (IBAction)tapMappingButton:(id)sender {

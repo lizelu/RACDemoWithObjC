@@ -28,6 +28,7 @@
 		F4291D831FD15ED800B0975A /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4291D821FD15ED800B0975A /* LoginRequest.m */; };
 		F452B7E21FD296B000136861 /* ColdSignalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F452B7E11FD296B000136861 /* ColdSignalViewController.m */; };
 		F452B7E51FD3F1FC00136861 /* RACSubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F452B7E41FD3F1FC00136861 /* RACSubjectViewController.m */; };
+		F454B9E31FE514C5005A71AE /* RACAndFPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F454B9E21FE514C5005A71AE /* RACAndFPSViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,8 @@
 		F452B7E11FD296B000136861 /* ColdSignalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColdSignalViewController.m; sourceTree = "<group>"; };
 		F452B7E31FD3F1FC00136861 /* RACSubjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACSubjectViewController.h; sourceTree = "<group>"; };
 		F452B7E41FD3F1FC00136861 /* RACSubjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSubjectViewController.m; sourceTree = "<group>"; };
+		F454B9E11FE514C5005A71AE /* RACAndFPSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACAndFPSViewController.h; sourceTree = "<group>"; };
+		F454B9E21FE514C5005A71AE /* RACAndFPSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACAndFPSViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				F4291D671FD0EEDA00B0975A /* RACKeypathController.m */,
 				F452B7E01FD296B000136861 /* ColdSignalViewController.h */,
 				F452B7E11FD296B000136861 /* ColdSignalViewController.m */,
+				F454B9E11FE514C5005A71AE /* RACAndFPSViewController.h */,
+				F454B9E21FE514C5005A71AE /* RACAndFPSViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 				F4034F831FD406B500506284 /* RACBaseOperatorViewController.m in Sources */,
 				F4291D431FCF9B5F00B0975A /* main.m in Sources */,
 				F4291D621FCFEBDF00B0975A /* RACReplaySubjectViewController.m in Sources */,
+				F454B9E31FE514C5005A71AE /* RACAndFPSViewController.m in Sources */,
 				F4291D5C1FCFDA6700B0975A /* SignalCombiningLatestViewController.m in Sources */,
 				F4291D651FD029F200B0975A /* RACObserveViewController.m in Sources */,
 				F4291D831FD15ED800B0975A /* LoginRequest.m in Sources */,
